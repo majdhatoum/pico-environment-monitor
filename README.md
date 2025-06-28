@@ -84,5 +84,5 @@ The following table summarizes the wiring configuration used in this project:
 
 ### 📷 Hardware Assembly Image
 
-![hardware](assets/hardware.png)
+![hardware](assets/hardware.jpeg)
 
