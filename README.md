@@ -37,6 +37,6 @@ This project uses a modular IoT architecture to monitor environmental conditions
 
 ### 🗂 Diagram
 
-
+![System Architecture](assets/system-architecture.png)
 
 > This architecture ensures modularity, easy maintenance, and a real-time view of environmental metrics.
