@@ -40,3 +40,49 @@ This project uses a modular IoT architecture to monitor environmental conditions
 ![System Architecture](assets/system-architecture.png)
 
 > This architecture ensures modularity, easy maintenance, and a real-time view of environmental metrics.
+
+## ✅ Step 3: Hardware
+
+### 🧰 Required Components
+
+To build the Raspberry Pi Pico W - Environment Monitor, the following hardware components are used:
+
+| Component               | Description                                                        |
+|-------------------------|--------------------------------------------------------------------|
+| Raspberry Pi Pico W     | Main microcontroller board with Wi-Fi support                     |
+| DHT11 Temperature Sensor| Measures temperature and humidity                                  |
+| Tilt Sensor (e.g., SW-520D or similar) | Detects tilt or vibration                                   |
+| Breadboard              | For quick and solderless circuit prototyping                      |
+| Jumper Wires (Male-Male)| To connect components on the breadboard                           |
+| LED (x2)                | Visual indicators: one for tilt status and another for overheat   |
+| 330Ω Resistors (x2)     | Current limiting resistors for the LEDs                           |
+| Micro USB cable         | For powering and programming the Raspberry Pi Pico W              |
+
+---
+
+### ⚡ Wiring Diagram
+
+The following table summarizes the wiring configuration used in this project:
+
+| Pico W Pin | Connected To          | Description                  |
+|------------|-----------------------|------------------------------|
+| GP0        | DHT11 Data Pin        | Temperature & humidity input |
+| GP2        | Tilt Sensor Signal Pin| Detects tilt                 |
+| GP4        | LED 1 (status)        | Turns on if tilt is detected |
+| GP6        | LED 2 (alert)         | Turns on if temperature > 35°C |
+
+> 📌 **Note**: The DHT11 sensor requires a 10kΩ pull-up resistor between VCC and Data for reliable communication. Some modules already have this onboard.
+
+---
+
+### 🔌 Power Supply
+
+- The Raspberry Pi Pico W is powered via Micro USB.
+- All sensors and LEDs are powered through the Pico W’s 3.3V and GND pins.
+
+---
+
+### 📷 Hardware Assembly Image
+
+![hardware](assets/hardware.png)
+
