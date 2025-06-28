@@ -41,7 +41,7 @@ This project uses a modular IoT architecture to monitor environmental conditions
 
 > This architecture ensures modularity, easy maintenance, and a real-time view of environmental metrics.
 
-## ✅ Step 3: Hardware
+## Hardware
 
 ### 🧰 Required Components
 
@@ -85,4 +85,81 @@ The following table summarizes the wiring configuration used in this project:
 ### 📷 Hardware Assembly Image
 
 ![hardware](assets/hardware.jpeg)
+
+> Above: A real-world image of the project hardware setup. The DHT11 sensor is connected on the left, and the tilt sensor at the bottom left. The Pico W sits at the center of the breadboard with the LEDs to the right.
+
+## Software Setup
+
+This section walks you through setting up the MicroPython code, installing dependencies, and launching all backend services using Docker Compose.
+
+---
+
+### 🧠 4.1 Clone the Project
+
+Start by cloning this repository directly, which includes all the required code and configurations:
+
+```bash
+git clone https://github.com/majdhatoum/pico-environment-monitor.git
+cd pico-environment-monitor```
+
+This will give you access to:
+
+- 📂 **The MicroPython code** for your Raspberry Pi Pico W  
+- 🐳 **Dockerized backend** (MQTT, Node-RED, InfluxDB, Grafana)  
+- 📈 **Preconfigured Node-RED flows** and **Grafana dashboards**  
+
+---
+
+### 📲 4.2 Configure MicroPython on Pico W
+
+#### 🔧 Flashing MicroPython (First Time Only)
+
+1. Hold down the **BOOTSEL** button on the Raspberry Pi Pico W and connect it to your computer via USB.
+2. It will appear as a **mass storage device**.
+3. Download the latest `.uf2` firmware from the [official MicroPython website](https://micropython.org/download/rp2-pico-w/).
+4. Drag and drop the `.uf2` file into the Pico’s USB drive.
+5. The Pico will automatically reboot and is now ready for MicroPython development.
+
+### 🧪 Thonny IDE Setup
+
+1. Open **Thonny IDE**.
+
+2. Navigate to:
+
+```bash
+Tools > Options > Interpreter
+```
+
+3. Set the interpreter to:
+```bash
+MicroPython (Raspberry Pi Pico W)
+```
+
+4. Open the following file from the cloned repository:
+```bash
+pico/main.py
+```
+
+
+✅ You do **not** need to write the code manually — the script is already included.
+
+---
+
+### ✍️ Edit Wi-Fi and MQTT Credentials
+
+In `main.py`, update the following lines to match your network environment:
+
+```python
+# Replace these with your actual Wi-Fi and MQTT settings
+ssid = 'your-wifi-ssid'
+password = 'your-wifi-password'
+mqtt_server = 'your-mqtt-broker-ip'```
+
+💡 **mqtt_server** should point to the host machine’s local IP address, e.g., `192.168.1.20`.
+
+---
+
+### 🔁 Auto-Start on Boot
+
+Once saved as `main.py`, the script will **automatically run** every time the Raspberry Pi Pico W is **powered on or reset**.
 
