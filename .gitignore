@@ -1,5 +1,26 @@
+# Python
 __pycache__/
-.env
 *.pyc
-*.db
-*.log
+
+# Node-RED
+nodered-data/
+
+# InfluxDB
+influxdb-data/
+
+# Mosquitto
+mosquitto/data/
+mosquitto/log/
+
+# Grafana
+grafana-data/
+
+# System files
+.DS_Store
+*.swp
+
+# Docker
+*.env
+.env.*
+docker-compose.override.yml
+
