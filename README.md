@@ -1,29 +1,17 @@
-# Raspberry Pi Pico W – Environment Monitor
+# 🌡️ Pico Environment Monitor
 
-This project collects temperature, humidity, and tilt data from a DHT11 sensor connected to a Raspberry Pi Pico W and visualizes it using Grafana.
+This project demonstrates a complete IoT-based environmental monitoring system using a Raspberry Pi Pico W, DHT11 sensor, MQTT, Node-RED, InfluxDB, and Grafana — all orchestrated via Docker.
 
-## Stack
-
-- **MicroPython** (Pico W firmware)
-- **MQTT** (Mosquitto)
-- **Node-RED** (for message routing & formatting)
-- **InfluxDB v1.8** (for time-series storage)
-- **Grafana** (for data visualization)
-- **Docker Compose** (for container orchestration)
-
-## Live Metrics
-
+It continuously monitors:
 - Temperature (°C)
 - Humidity (%)
-- Tilt status (0 = Flat, 1 = Tilted)
+- Tilt status (shock/fall detection)
 
-## Setup
+Data is:
+- **Captured** by the Raspberry Pi Pico W
+- **Published** to an MQTT broker (Mosquitto)
+- **Processed and visualized** via Node-RED
+- **Stored** in InfluxDB
+- **Displayed** using Grafana dashboards
 
-1. Flash the Pico W with MicroPython.
-2. Upload the sensor script via Thonny.
-3. Run `docker-compose up -d` to start services.
-4. Open Node-RED at `http://localhost:1880`.
-5. Open Grafana at `http://localhost:3000` and import the pre-made dashboard.
-
-## Folder Structure
-
+> This project follows the structure and expectations of the LNU IoT course. It aims to give hands-on experience with microcontrollers, MQTT communication, containerization, and time-series visualization.
