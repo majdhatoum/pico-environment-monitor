@@ -6,11 +6,11 @@ import dht
 from umqtt.simple import MQTTClient
 
 # Wi-Fi credentials
-ssid = 'dany'
-password = 'dany2009'
+ssid = 'XXXX' #Your Wifi ssid
+password = 'XXXX' #Your Wifi pass
 
 # MQTT Broker settings
-mqtt_server = '192.168.1.20'
+mqtt_server = '192.xxx.x.xx' #change here
 mqtt_topic = b'pico/data'
 
 # Connect to Wi-Fi
