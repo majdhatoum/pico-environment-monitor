@@ -100,7 +100,8 @@ Start by cloning this repository directly, which includes all the required code 
 
 ```bash
 git clone https://github.com/majdhatoum/pico-environment-monitor.git
-cd pico-environment-monitor```
+cd pico-environment-monitor
+```
 
 This will give you access to:
 
@@ -153,7 +154,8 @@ In `main.py`, update the following lines to match your network environment:
 # Replace these with your actual Wi-Fi and MQTT settings
 ssid = 'your-wifi-ssid'
 password = 'your-wifi-password'
-mqtt_server = 'your-mqtt-broker-ip'```
+mqtt_server = 'your-mqtt-broker-ip'
+```
 
 💡 **mqtt_server** should point to the host machine’s local IP address, e.g., `192.168.1.20`.
 
