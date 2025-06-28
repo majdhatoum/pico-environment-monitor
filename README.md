@@ -10,10 +10,10 @@ Ever wondered what’s happening in your room, lab, greenhouse, or secret baseme
 
 This project continuously collects sensor data from your Raspberry Pi Pico W and sends it over Wi-Fi via MQTT to a backend stack that:
 
-- 🔃 **Processes data** in Node-RED with flow-based logic
-- 🗃️ **Stores it** in InfluxDB (a time-series database)
-- 📊 **Visualizes it** using beautiful Grafana dashboards
-- 🔔 Can also trigger alerts (e.g., overheating or tilting detected)
+- **Processes data** in Node-RED with flow-based logic
+- **Stores it** in InfluxDB (a time-series database)
+- **Visualizes it** using beautiful Grafana dashboards
+- Can also trigger alerts (e.g., overheating or tilting detected) -- **Only using LEDs -- Not Graphana** 
 
 ---
 
@@ -23,11 +23,11 @@ Because real-world data is cool — and useful.
 
 Use cases include:
 
-- 🌱 **Home plant monitoring** — See if your mini jungle is thriving or sweating.
-- 🏠 **Smart home logging** — Detect temperature or tilt-based anomalies (did someone shake the shelf again?!).
-- 🧪 **Lab data logging** — Track stable environments for sensitive experiments.
-- 🛠️ **DIY makers & STEM education** — Learn IoT fundamentals using MicroPython and Docker.
-- 🧰 **Prototyping & Edge deployments** — Quickly test environment sensing for any embedded system.
+- **Home plant monitoring** — See if your mini jungle is thriving or sweating.
+- **Smart home logging** — Detect temperature or tilt-based anomalies (did someone shake the shelf again?!).
+- **Lab data logging** — Track stable environments for sensitive experiments.
+- **DIY makers & STEM education** — Learn IoT fundamentals using MicroPython and Docker.
+- **Prototyping & Edge deployments** — Quickly test environment sensing for any embedded system.
 
 ---
 
@@ -78,7 +78,7 @@ This project uses a modular IoT architecture to monitor environmental conditions
 3. InfluxDB stores the timestamped data.
 4. Grafana queries the data and presents it as time series charts.
 
-### 🗂 Diagram
+### Diagram
 
 ![System Architecture](assets/system-architecture.png)
 
