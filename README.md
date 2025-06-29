@@ -354,6 +354,7 @@ Your data will be persisted in the project folder under:
 ## Accessing and Using the Dashboard
 
 Once your stack is up and running, you can start monitoring real-time sensor data.
+> Do not forget to Run your Thonny code. If all is well You should be seeing something like: **Publishing: {"hum": 10, "tilt": 0, "temp": 28}** updating constantly!
 
 ### 1. Access Node-RED
 - Open your browser and go to: `http://localhost:1880`
@@ -385,6 +386,9 @@ Once logged in:
   - 🌡 Temperature
   - 💧 Humidity
   - 📦 Tilt status
+ 
+### 3. A peak of what you should be expeting to see on the board! 
+
 
 
 ## Final Thoughts & Reflections
