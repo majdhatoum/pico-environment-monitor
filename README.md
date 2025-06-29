@@ -214,7 +214,7 @@ client.publish(mqtt_topic, payload)
 >  _The simplicity of this loop makes it easy to extend. Want to detect gas, motion, or cosmic rays? Just plug in a sensor and add its data to the payload. Easy peasy!_
 
 
-### 4.1 Clone the Project
+### 1. Clone the Project
 
 Start by cloning this repository directly, which includes all the required code and configurations:
 
@@ -231,7 +231,7 @@ This will give you access to:
 
 ---
 
-### 4.2 Configure MicroPython on Pico W
+### 2. Configure MicroPython on Pico W
 
 #### Flashing MicroPython (First Time Only)
 
@@ -241,7 +241,7 @@ This will give you access to:
 4. Drag and drop the `.uf2` file into the Pico’s USB drive.
 5. The Pico will automatically reboot and is now ready for MicroPython development.
 
-### Thonny IDE Setup
+### 3. Thonny IDE Setup
 
 1. Open **Thonny IDE**.
 
@@ -266,7 +266,7 @@ pico/main.py
 
 ---
 
-### Edit Wi-Fi and MQTT Credentials
+### 4. Edit Wi-Fi and MQTT Credentials
 
 In `main.py`, update the following lines to match your network environment:
 
@@ -281,12 +281,12 @@ mqtt_server = 'your-mqtt-broker-ip'
 
 ---
 
-### Auto-Start on Boot
+### 5. Auto-Start on Boot
 
 Once saved as `main.py`, the script will **automatically run** every time the Raspberry Pi Pico W is **powered on or reset**.
 
 
-## 4.3 Docker-Based Backend Setup
+## Docker-Based Backend Setup
 
 This project comes with a pre-configured `docker-compose.yml` file that sets up the entire backend system, including:
 
@@ -311,7 +311,7 @@ docker --version
 docker-compose --version
 ```
 
-## Launch the Stack
+### Launch the Stack
 
 Navigate to the project root directory (where `docker-compose.yml` is located), then start all services with:
 ```bash
@@ -331,7 +331,7 @@ docker ps
 
 ---
 
-## Shutdown and Resume Later
+### Shutdown and Resume Later
 
 To safely stop the stack, run:
 ```bash
