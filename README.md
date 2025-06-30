@@ -389,7 +389,7 @@ Once logged in:
  
 ### 3. A peak of what you should be expeting to see on the board! 
 
-
+![dashboard](assets/dashboard.png)
 
 ## Final Thoughts & Reflections
 
