@@ -34,7 +34,7 @@ Use cases include:
 
 ---
 
-## What Problem Does It Solve?
+## What Problem Does The Pipeline Solve?
 
 Setting up a full IoT pipeline often means wrestling with half-baked Python scripts, mystery dashboard tools, and fragile Wi-Fi setups. This project:
 
