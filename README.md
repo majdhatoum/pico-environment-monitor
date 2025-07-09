@@ -102,7 +102,6 @@ We chose **Wi-Fi (802.11)** for a few important reasons:
 
 - Easy to set up in a home/lab environment
 - Supported natively by Raspberry Pi Pico W
-- No need for a separate LoRa, Zigbee, or GSM module
 - Powered continuously – so power-saving isn’t a top priority
 
 > _Wi-Fi is great for short-range, continuous power use cases, but may not suit remote/low-power deployments (e.g., farms, forests, far-away fridges)._
