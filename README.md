@@ -1,5 +1,6 @@
 # 🌡️ Pico Environment Monitor
 *By Majd Fares Al Hatoum*
+ID: ma228cn
 
 Monitor your surroundings in style!  
 Ever wondered what’s happening in your room, lab, greenhouse, or secret basement lair when you’re not looking?
@@ -37,7 +38,7 @@ Use cases include:
 
 Setting up a full IoT pipeline often means wrestling with half-baked Python scripts, mystery dashboard tools, and fragile Wi-Fi setups. This project:
 
-- ✅ Uses reliable, open protocols (MQTT, HTTP, JSON)
+- ✅ Uses reliable, open protocols (MQTT, JSON)
 - ✅ Provides a **containerized backend** that just works with `docker compose up`
 - ✅ Makes the hardware + software setup simple and reproducible
 - ✅ Ships with a plug-and-play frontend (dashboard + flows pre-installed)
